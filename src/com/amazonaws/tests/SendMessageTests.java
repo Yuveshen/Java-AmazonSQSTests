@@ -41,18 +41,7 @@ public class SendMessageTests extends BaseTestSuite{
 		String myQueueUrl = queueDefinitions.getQueueUrl(queueName);
 		messageDefinitions.sendMultipleMessagesToQueue(myQueueUrl, 5);
 	}
-/*	
-	@Test
-	public void sendMessagesMoreThanQueueDefaultTest() throws Exception {	//TODO Verify THis
-		mapValues.clear();
-		int messageCount = 20;
-		
-		QueueDefinitions queueDefinitions = new QueueDefinitions(sqsServer); 
-		MessageDefinitions messageDefinitions = queueDefinitions.createQueue(queueName,mapValues);
-		String myQueueUrl = queueDefinitions.getQueueUrl(queueName);
-		messageDefinitions.sendMultipleMessagesToQueue(myQueueUrl, messageCount);
-	}
-	*/
+
 	@Test
 	public void sendMessagesWithSpecialCharachtersTest() throws Exception {
 		mapValues.clear();

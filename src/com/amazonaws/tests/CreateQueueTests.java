@@ -30,15 +30,4 @@ public class CreateQueueTests extends BaseTestSuite{
 		queueDefinitions.createQueue(queueName, mapValues);
 		Assert.assertTrue("Queue not found",queueDefinitions.getQueueVisibilityTimeout().equals(mapValues.get("defaultVisibilityTimeoutAttribute")));	
 	}
-/*
-	@Test
-	public void createQueueWithMoreThanEightyCharactersTest() {
-		//TODO doesnt work
-		queueName = "llllllkkkkkkmmmmmmmmfffffffrrrrrrlllleeewwwwssssooookkkknnnnjjjjffffwwwwiiiinnnnttttpopppllllsssskkkkiiiiffffggggtttthhhhnnnnnsssssjjjjwwwwooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo";
-		mapValues = null;
-		QueueDefinitions queueDefinitions = new QueueDefinitions(sqsServer); 
-		queueDefinitions.createQueue(queueName, mapValues);
-		Assert.assertTrue("Queue not found",queueDefinitions.getCode().equals("InvalidParameterValue"));			
-	}
-	*/
 }
